@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './login.css'; // Importa los estilos
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -6,13 +7,12 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    //lógica para enviar los datos al backend
     console.log('Login:', { username, password });
   };
 
   return (
-    <div>
-      <h1>Iniciar Sesion</h1>
+    <div className="login-container">
+      <h1>Iniciar Sesión</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Username</label>
