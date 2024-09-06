@@ -7,4 +7,3 @@ export const login = (username, password) => {
   // envia una solicitud POST a la ruta de login de la API con el nombre de usuario y la contraseña
   return axios.post(`${backend_url}/login`, { username, password });
 };
-asdasdasd
